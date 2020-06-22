@@ -26,13 +26,13 @@ Problem sets for Honors PreCalculus (with answers)
   <li>Angles and Radian Measure</li>
   <li>Trig Functions of Any Angle</li>
   <li>Graphs of Sine and Cosine Functions</li>
-  <li>**Graphs of Other Trig Functions**</li>
+  <li><strong>Graphs of Other Trig Functions</strong></li>
   <li>Inverse Trig Functions</li>
   <li>Trig Equations</li>
   <li>Law of Sines and Law of Cosines</li>
   <li>Area of Triangles</li>
-  <li>Polar Coordinates</li>
-  <li>Vectors</li>
+  <li><strong>Polar Coordinates</strong></li>
+  <li><strong>Vectors<strong></li>
   <li>Finding Limits: Numerically and Graphically</li>
   <li>Limits and Algebra</li>
   <li>Continuity</li>
