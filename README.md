@@ -26,7 +26,7 @@ Problem sets for Honors PreCalculus (with answers)
   <li>Angles and Radian Measure</li>
   <li>Trig Functions of Any Angle</li>
   <li>Graphs of Sine and Cosine Functions</li>
-  <li>Graphs of Other Trig Functions</li>
+  <li>**Graphs of Other Trig Functions**</li>
   <li>Inverse Trig Functions</li>
   <li>Trig Equations</li>
   <li>Law of Sines and Law of Cosines</li>
