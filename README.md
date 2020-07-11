@@ -31,7 +31,7 @@ Problem sets for Honors PreCalculus (with answers)
   <li>Trig Equations</li>
   <li>Law of Sines and Law of Cosines</li>
   <li>Area of Triangles</li>
-  <li><strong>Polar Coordinates</strong></li>
+  <li>Polar Coordinates</li>
   <li><strong>Vectors</strong></li>
   <li>Finding Limits: Numerically and Graphically</li>
   <li>Limits and Algebra</li>
