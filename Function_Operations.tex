@@ -1,160 +1,145 @@
-\documentclass[11pt]{article}
-\usepackage[latin1]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{xcolor}
-\usepackage{makeidx}
-\usepackage{graphicx, array}
-\usepackage{pgf,tikz}
-\usepackage{tkz-euclide}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.9}
-\usetkzobj{all}
-\pagestyle{empty}
-\usepackage{enumerate}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, enumerate, multicol}
 \usepackage[margin = 0.5in]{geometry}
 \pagestyle{empty}
 \raggedright
+\everymath{\displaystyle}
+\newcounter{PS}
+
 
 \begin{document}
 
-Name \makebox[2.5in]{\hrulefill}    \hfill  Honors PreCalc P-set
+Name \makebox[3in]{\hrulefill} \hfill Honors PreCalc PSet
 
 \subsubsection*{Function Operations \hfill \makebox[0.35in]{\hrulefill} / 10}
 
-Simplify or evaluate each for $f(x) = 3x + 7$, $g(x) = -2x^2 - 1$, $h(x) = \sqrt{x + 1}$, and $j(x) = x^3$.
-\begin{flalign*}
-1.  \quad   &   (f + g)(1)          &
-2.  \quad   &   (h - f)(3)          &
-3.  \quad   &   (f \cdot j)(-2)     &&\\[1in]
-4.  \quad   &   (f - g)(x)          &
-5.  \quad   &   (f \cdot g)(x)      &
-6.  \quad   &   (h \cdot h)(x)      &&\\[1.25in]
-7.  \quad   &   \left(\frac{g}{j}\right)(x)      &
-8.  \quad   &   \left(\frac{f}{j}\right)(3) &
-9.  \quad   &   (h \cdot j)(2)             &&\\[1.25in]
-10. \quad   &   (f + g)(x)             &
-11. \quad   &   (j \cdot g)(x)      &
-12. \quad   &   g(2) - h(15)        &&\\[1.25in]
-\end{flalign*}
-\smallskip
+Use the pair of functions $f$ and $g$ to find the following values if they exist. \newline\\
 
-Find the difference quotient for each.
-\begin{flalign*}
-13. \quad   &   f(x) = 6x + 7   &
-14. \quad   &   f(x) = x^2 - 9  &
-15. \quad   &   f(x) = 5x^2 - 3x + 4    &&\\
-\end{flalign*}
-
-\newpage
-
-Use the graph to evaluate each.
-\newline\\
-
-\begin{center}
-
-\begin{tikzpicture}
-
-\begin{axis}
-[   
-    grid,
-    axis lines=middle,
-    xmin=-5.25,xmax=5.25,
-    ymin=-3.25,ymax=5.25,
-    restrict y to domain=-3:5,
-    xtick={-5,-4,...,5},
-    xticklabels={-5,-4,-3,-2,-1,,1,2,3,4,5},
-    ytick={-3,-2,...,5},
-    yticklabels={-3,-2,-1,,1,2,3,4,5},
-    axis line style={latex-latex},
-    axis line style={shorten >=-7.5pt, shorten <=-7.5pt},
-    xlabel=$x$,
-    ylabel=$y$,
-    xlabel style={at={(ticklabel* cs:1)},anchor=west, xshift=0.15cm},
-    ylabel style={at={(ticklabel* cs:1)},anchor=south west},
-    width=5.5in,
-    height=3.5in
-]
-\addplot[mark = *, color=red] coordinates
-{
-    (-4,5)
-    (-3,4)
-    (-2,3)
-    (-1,3)
-    (0,2)
-    (1,1)
-    (2,-1)
-    (3,-3)
-};
-\addplot[mark=*, color=blue] coordinates
-{
-    (-5,-1)
-    (-4,0)  
-    (-3,1)
-    (-2,2)
-    (-1,2)
-    (0,1)
-    (1,1)
-    (2,1)
-    (3,0)
-    (4,-1)
-    (5,-2)
-};
-\end{axis}
-\node at (2.5,7) [anchor = north west] {\color{red}\LARGE $f(x)$};
-\node at (9,1) [anchor = east] {\color{red}\LARGE $f(x)$};
-\node at (1,4) [anchor = north west] {\color{blue} \LARGE $g(x)$};
-\node at (9,3.5) [anchor = south west] {\color{blue} \LARGE $g(x)$};
-\end{tikzpicture}
-\end{center}
-
-\begin{flalign*}
-16. \quad   &   f(2) + g(4)         &
-17. \quad   &   g(-1) \cdot g(-3)   &
-18. \quad   &   (f - g)(2)      &
-19. \quad   &   \left(\frac{g}{f}\right)(-2)            &&\\[1in]
-\end{flalign*}
-
-\fbox{\emph{Level 2}}
-\newline\\
-
-20. A balloon is is being filled with air. The radius $r$ is increasing with time $t$ (in seconds) according to the formula $r(t) = \frac{1}{2}t^2$. \newline\\
-Using the volume formula for a sphere, $V(r) = \frac{4}{3}\pi r ^3$, find the volume as a function of time.
-\\[1.5in]
-
-
-21. If $f$ and $g$ are odd functions, show that $f \circ g$ is also odd.
-
-
-
-\newpage
-
-
-\textbf{Function Operations and Compositions KEY}
-
+\begin{tabular}{p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}}
+    \textbullet $(f+g)(2)$  &
+    \textbullet $(f-g)(-1)$ &
+    \textbullet $(fg)\left(\frac{1}{2}\right)$ &
+    \textbullet $\left(\frac{f}{g}\right)(0)$   \\
+\end{tabular}
+\begin{multicols}{3}
 \begin{enumerate}
-    \item 7
-    \item $-14$
-    \item $-8$
-    \item $2x^2+3x+8$
-    \item $-6x^3-14x^2-3x-7$
-    \item $x+1$
-    \item $\frac{-2x^2-1}{x^3}$, or $\frac{-2}{x}-\frac{1}{x^3}$
-    \item $\frac{16}{27}$
-    \item $8\sqrt{2}$
-    \item $-2x^2+3x+6$
-    \item $-2x^5-x^3$
-    \item $-13$
-    \item 6
-    \item $2x+h$
-    \item $10x + 5h - 3$
-    \item $-2$
-    \item 2
-    \item $-2$
-    \item $\frac{2}{3}$
+    \item $f(x) = x^2-x$ and $g(x) = 12-x^2$
+    \item $f(x) = \sqrt{x+3}$ and $g(x) = 2x-1$
+    \item $f(x) = x^2$ and $g(x) = \frac{3}{2x-3}$
+\setcounter{PS}{\value{enumi}}
 \end{enumerate}
+\end{multicols}
+\vfill
 
+Use the pair of functions $f$ and $g$ to simplify each expression. \textbf{Then state its domain}.  \newline\\
 
+\begin{tabular}{p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}}
+    \textbullet $(f+g)(x)$  &
+    \textbullet $(f-g)(x)$ &
+    \textbullet $(fg)(x)$ &
+    \textbullet $\left(\frac{f}{g}\right)(x)$   \\
+\end{tabular}
 
+\begin{multicols}{2}
+\begin{enumerate}   \setcounter{enumi}{\value{PS}}
+    \item $f(x) = 2x+1$ and $g(x) = x-2$
+    \item $f(x) = x^2$ and $g(x) = 3x-1$
+\setcounter{PS}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+\vfill
+\begin{multicols}{2}
+\begin{enumerate}   \setcounter{enumi}{\value{PS}}
+    \item $f(x) = \frac{x}{2}$ and $g(x) = \frac{2}{x}$
+    \item $f(x) = x$ and $g(x) = \sqrt{x+1}$
+\setcounter{PS}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+\vfill
+\newpage
+
+Name \makebox[3in]{\hrulefill} \hfill Honors PreCalc Function Operations PSet   \newline\\
+Find the difference quotient for each.
+\begin{multicols}{2}
+\begin{enumerate}   \setcounter{enumi}{\value{PS}}
+    \item $f(x) = 2x-5$
+    \item $f(x) = 6$
+\setcounter{PS}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+\vfill
+\begin{multicols}{2}
+\begin{enumerate}   \setcounter{enumi}{\value{PS}}
+    \item $f(x) = 3x^2-x$
+    \item $f(x) = \frac{2}{x}$
+\end{enumerate}
+\end{multicols}
+\vfill
+
+\newpage
+
+\textsc{Function Operations KEY}
+
+\begin{enumerate}   \setlength{\itemsep}{15pt}
+\begin{multicols}{3}
+    \item 
+    \begin{itemize}
+        \item $(f+g)(2) = 10$
+        \item $(f-g)(-1) = -9$
+        \item $(fg)\left(\frac{1}{2}\right) = -\frac{47}{16}$
+        \item $\left(\frac{f}{g}\right)(0) = 0$
+    \end{itemize}
+    \item
+    \begin{itemize}
+        \item $(f+g)(2) = 3+\sqrt{5}$
+        \item $(f-g)(-1) = 3+\sqrt{2}$
+        \item $(fg)\left(\frac{1}{2}\right) = 0$
+        \item $\left(\frac{f}{g}\right)(0) = -\sqrt{3}$
+    \end{itemize}
+    \item
+    \begin{itemize}
+        \item $(f+g)(2) = 7$
+        \item $(f-g)(-1) = \frac{8}{5}$
+        \item $(fg)\left(\frac{1}{2}\right) = -\frac{3}{8}$
+        \item $\left(\frac{f}{g}\right)(0) = 0$
+    \end{itemize}
+\end{multicols}
+\vspace{0.25in}
+    \item 
+    \begin{itemize}
+        \item $(f+g)(x)=3x-1$ \quad Domain: $(-\infty, \infty)$
+        \item $(f-g)(x)=x+3$ \quad Domain: $(-\infty, \infty)$
+        \item $(fg)(x)=2x^2-3x-2$ \quad Domain: $(-\infty, \infty)$
+        \item $\left(\frac{f}{g}\right)(x)=\frac{2x+1}{x-2}$ \quad Domain: $(-\infty,2)\cup (2,\infty)$
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item $(f+g)(x)=x^2+3x-1$ \quad Domain: $(-\infty, \infty)$
+        \item $(f-g)(x)=x^2-3x+1$ \quad Domain: $(-\infty, \infty)$
+        \item $(fg)(x)=3x^3-x^2$ \quad Domain: $(-\infty, \infty)$
+        \item $\left(\frac{f}{g}\right)(x)=\frac{x^2}{3x-1}$ \quad Domain: $\left(-\infty,\frac{1}{3}\right) cup \left(\frac{1}{3},\infty\right)$
+    \end{itemize}
+    \item
+    \begin{itemize}
+        \item $(f+g)(x)=\frac{x^2+4}{2x}$ \quad Domain: $(-\infty, 0) \cup (0,\infty)$
+        \item $(f-g)(x)=\frac{x^2-4}{2x}$ \quad Domain: $(-\infty, 0) \cup (0,\infty)$
+        \item $(fg)(x)=1$ \quad Domain: $(-\infty, 0) \cup (0,\infty)$
+        \item $\left(\frac{f}{g}\right)(x)=\frac{x^2}{4}$ \quad Domain: $(-\infty, 0) \cup (0,\infty)$
+    \end{itemize}
+    \item
+    \begin{itemize}
+        \item $(f+g)(x)=x+\sqrt{x+1}$ \quad Domain: $[-1,\infty)$
+        \item $(f-g)(x)=x-\sqrt{x+1}$ \quad Domain: $[-1,\infty)$
+        \item $(fg)(x)=x\sqrt{x+1}$ \quad Domain: $[-1,\infty)$
+        \item $\left(\frac{f}{g}\right)(x)=\frac{x}{\sqrt{x+1}}$ \quad Domain: $(-1,\infty)$
+    \end{itemize}
+\vspace{0.25in}
+    \begin{multicols}{4}
+    \item 2
+    \item 0
+    \item $6x+3h-1$
+    \item $\frac{-2}{x(x+h)}$
+    \end{multicols}
+\end{enumerate}
 \end{document}
